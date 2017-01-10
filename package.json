@@ -1,0 +1,16 @@
+{
+  "name": "fcc-survey-api",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "micro -p 3001",
+    "deploy": "now -p -e API_KEY=@at-fcc-key -e BASE_URL=@at-fcc-baseurl -e TABLE_NAME=@at-fcc-tablename --alias survey-api.now.sh"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "micro": "latest",
+    "micro-post": "^0.1.1",
+    "now": "^1.0.0"
+  },
+  "license": "MIT"
+}
